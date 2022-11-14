@@ -191,7 +191,7 @@ function calcularAleatorio(comienzo,fin){
 //5a
 function mitadCar(cadena){
     let aux = "";
-    for(i=Math.floor(cadena.length/2); i<cadena.length;i++){//recorremos la cadena desde la mitad redondeada hacia abajo.
+    for(let i=Math.floor(cadena.length/2); i<cadena.length;i++){//recorremos la cadena desde la mitad redondeada hacia abajo.
         aux=aux+cadena[i];
     }
     alert("La mitad de tu cadena es: "+aux);
@@ -207,7 +207,7 @@ function ultimoCaracter(cadena){
 //5c
 function cadenaInversa(cadena){
     let aux = "";
-    for(i=cadena.length-1; i>=0;i--){//Recorremos la cadena al reves
+    for(let i=cadena.length-1; i>=0;i--){//Recorremos la cadena al reves
         aux+=cadena[i];
     }
     alert("Tu cadena del reves es: "+aux);
@@ -218,7 +218,7 @@ function cadenaInversa(cadena){
 function cadenaGuiones(cadena){
     cadena=cadena.replace(/\s+/g,'');//hacemos un replace de espacios en blanco por vacio
     let aux = "";
-    for(i=0; i<cadena.length-1;i++){//ponemos .length-1 para poder salir antes del bucle y meter la ultima letra sin - 
+    for(let i=0; i<cadena.length-1;i++){//ponemos .length-1 para poder salir antes del bucle y meter la ultima letra sin - 
         aux+=cadena[i]+"-";
     }
     aux+=cadena[cadena.length-1];//hay que hacer esto para que no tener que decidir entre tener un - al princpio o el final de la aux
